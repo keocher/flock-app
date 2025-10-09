@@ -1,8 +1,10 @@
 ## Flock
 A social media platform for students to build relationships and collaborate.
 
-## Collaborators
+## Collaborators 
+<br>
 **CS353 Group 16**
+<br>
 REEMA ABUOWDA <br>
 KEVIN PATRICK CLANCY <br>
 ARRAN KEOGH <br>
@@ -22,5 +24,6 @@ Figma, Miro, GoogleDocs
 Google Docs, Git, GitLab
 ### Other
 VSCode
+
 
 
