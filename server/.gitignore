@@ -1,0 +1,49 @@
+# -------------------------
+# Node / Express Server
+# -------------------------
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Environment files (keep secrets safe)
+.env
+.env.local
+.env.*.local
+
+# Build output / transpiled code
+dist/
+build/
+tmp/
+temp/
+
+# Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript (if applicable)
+*.tsbuildinfo
+tsconfi
