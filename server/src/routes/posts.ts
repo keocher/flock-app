@@ -6,8 +6,19 @@ import { requireAuth } from '../middlewares/auth.js';
 import { validate } from '../middlewares/validate.js';
 import { createPostSchema, listPostsSchema } from '../schemas/post.js';
 import { createPost, listPosts, getPost } from '../services/posts.js';
+import { PostModel } from '../models/Post.js';
 
 const router = Router();
+
+//hoempage posts
+router.get('/homepage', async (_req, res) => {
+  try {
+    const posts = await PostModel.find().sort({ date: -1 }).limit(10);
+    res.json({ posts });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch posts', details: err });
+  }
+});
 
 // GET /v1/posts?page=1&limit=20
 router.get('/', validate(listPostsSchema), async (req: Request, res: Response) => {
