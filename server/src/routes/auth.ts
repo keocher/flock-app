@@ -11,7 +11,7 @@ router.post('/signup', validate(signUpSchema), async (req: Request, res: Respons
 
   try {
     const user = await createUser(email, password, displayName);
-    const tokens = issueTokens(user);
+    const tokens = issueTokens({ _id: user._id.toString() });
 
     return res.status(201).json({
       user: {
@@ -54,7 +54,7 @@ router.post('/signin', validate(signInSchema), async (req: Request, res: Respons
     });
   }
 
-  const tokens = issueTokens(user);
+  const tokens = issueTokens({ _id: user._id.toString() });
 
   return res.json({
     user: {
