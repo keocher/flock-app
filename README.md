@@ -1,16 +1,12 @@
 
-![Alt Logo](./assets/flock-logo.png)
-<br>
+![Flock Logo](./assets/flock-logo.png)
 
 ## Flock
 A social media platform for students to build relationships and collaborate.
 
 ## Collaborators 
-<br>
-
 ### Group 16
 
-<br>
 | Name | Student No. | CompSci No. | Main Area |
 |------|-------------|-------------|-----------|
 | Aayush | 23370203 | u240634 | Back-End |
