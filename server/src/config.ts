@@ -1,9 +1,8 @@
-// loads environment variables and exports configuration settings
-
 import dotenv from 'dotenv';
 dotenv.config();
 
 export const config = {
-  port: Number(process.env.PORT || 4000),
-  jwtSecret: process.env.JWT_SECRET || 'devsecret'
+  mongoUri: process.env.MONGO_URI,
+  port: process.env.PORT ? parseInt(process.env.PORT) : 5000,
+  jwtSecret: process.env.JWT_SECRET || 'defaultSecret',
 };
