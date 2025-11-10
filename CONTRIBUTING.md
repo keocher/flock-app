@@ -85,7 +85,8 @@ npm install
 ```bash
    git switch dev //switch to dev
    git pull
-   git switch -c feature/my-feature //create branch (e.g. for homepage feature/home-page)   git add . //stage all changes
+   git switch -c feature/my-feature //create branch (e.g. for homepage feature/home-page)   
+   git add . //stage all changes
    git commit -m 'added feature' //commit changes with short description of what you changed 
    git push -u origin feature/my-feature //push your commits to the online repository and set upstream to current branch. once upstream is set you will only need to do "git push" until you wish to change the branch you push.
    

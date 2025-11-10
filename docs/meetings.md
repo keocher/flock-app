@@ -78,4 +78,18 @@
 - frontend developers discussed with backend developers on routing conventions.
 - plan for the next week was discussed where we agreed the frontend team will integrate the api that's been written, the backend will get the database and api working together, and after the next meeting on 2025-11-05 the full stack developers will work together on merging the branches and getting a stable dev branch to work out of.
 
+## 2025-11-05
+
+|Name|Present|
+|----|-------|
+|Aayush  | Y |
+|Arran   | Y |
+|Caitlin | N |
+|David   | N |
+|Kevin   | Y |
+|Reema   | Y |
+|Samuel  | Y |
+
+### Agenda
+### Minutes
 

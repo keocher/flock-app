@@ -54,6 +54,7 @@ const Sidebar = () => {
             </Link>
             </nav>
         </div>
+        
         <div className='items-center mt-auto mb-6'>
             <Image
                 src="/profile-pic.png"
