@@ -1,29 +1,33 @@
+
+![Flock Logo](./assets/flock-logo.png)
+
 ## Flock
 A social media platform for students to build relationships and collaborate.
 
 ## Collaborators 
-<br>
-**CS353 Group 16**
-<br>
-REEMA ABUOWDA <br>
-KEVIN PATRICK CLANCY <br>
-ARRAN KEOGH <br>
-DAVID-WILLIAMS MAMMAN-BADAR <br>
-AAYUSH MOGARE <br>
-SAMUEL IFEANYICHUKWU JUNIOR OGWU <br>
-CAITLIN PANTING <br>
+### Group 16
+
+| Name | Student No. | CompSci No. | Main Area |
+|------|-------------|-------------|-----------|
+| Aayush | 23370203 | u240634 | Back-End |
+| Arran | 23452532 | u240218 | Full-Stack |
+| Caitlin| 22521999 | u230289 | Front-End |
+| David-Williams | 23406252 | u240223 | Back-End |
+| Kevin | 23410606 | u240649 | Front-End |
+| Reema | 24767945 | u250456 | Front-End |
+| Samuel | 23438342 | u240637 | Full-Stack |
 
 ## Technologies Used
 ### Frontend
 Next.js, React, Typescript, TailwindCSS
 ### Backend
-Express, Typescript, Node.js
+Express, Typescript, Node.js, MongoDB
 ### Design/Planning
-Figma, Miro, GoogleDocs
+Figma, Miro, Word
 ### Version Control/Collab
-Google Docs, Git, GitLab
+Git, GitLab
 ### Other
-VSCode
+VSCode, Docker
 
 
 

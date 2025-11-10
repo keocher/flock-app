@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { FaHome } from 'react-icons/fa';
 import { BiSolidMessageAdd } from 'react-icons/bi';
@@ -5,6 +6,10 @@ import { FaBook } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
 import IconWrapper from './wrappers/IconWrapper';
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+
 
 const Sidebar = () => {
   return (
@@ -21,13 +26,35 @@ const Sidebar = () => {
         </div>
 
         <div className='justify-center flex items-center'>
-            <nav  className='gap-15 flex flex-col items-center justify-center '>
-                <IconWrapper><FaHome className='size-10'/></IconWrapper>
-                <IconWrapper><BiSolidMessageAdd className='size-10'/></IconWrapper>
-                <IconWrapper><FaBook className='size-10'/></IconWrapper>
-                <IconWrapper><FaSearch className='size-10'/></IconWrapper>
+            
+
+            <nav className="gap-15 flex flex-col items-center justify-center">
+            <Link href="/home">
+                <IconWrapper>
+                <FaHome className="size-10" />
+              </IconWrapper>
+            </Link>
+
+            <Link href="/add-post">
+                <IconWrapper >
+                <BiSolidMessageAdd className="size-10"  />
+                </IconWrapper>
+            </Link>
+
+            <Link href="/browse-modules">
+                <IconWrapper>
+                <FaBook className="size-10" />
+                </IconWrapper>
+            </Link>
+
+            <Link href="/search">
+                <IconWrapper>              
+                     <FaSearch className="size-10"  />
+                </IconWrapper>
+            </Link>
             </nav>
         </div>
+        
         <div className='items-center mt-auto mb-6'>
             <Image
                 src="/profile-pic.png"
