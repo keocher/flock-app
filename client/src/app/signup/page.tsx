@@ -59,7 +59,7 @@ return (
           flex-col
           justify-center
           px-10
-          bg-flockbeige
+          
         "
       >
         {/* Logo / Header */}
@@ -67,14 +67,13 @@ return (
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mb-10 flex items-center gap-3"
+          className="mb-5 flex items-center gap-3"
         >
           <img
             src="/flock-logo.svg"
             alt="Flock logo"
-            className="w-10 h-10"
+            className="w-45 h-45"
           />
-          <h1 className="text-2xl font-bold text-flockblack">Flock</h1>
         </motion.div>
 
         {/* Headings */}
@@ -83,10 +82,10 @@ return (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h2 className="text-flockgreen mb-1 text-sm tracking-wide uppercase">
+          <h2 className="text-gruvgreen mb-1 text-sm tracking-wide uppercase">
             Start your journey
           </h2>
-          <h1 className="text-3xl md:text-4xl font-semibold mb-6 leading-tight text-flockblack/90">
+          <h1 className="text-3xl md:text-4xl font-semibold mb-6 leading-tight ">
             Create your Flock Account
           </h1>
         </motion.div>
@@ -101,7 +100,7 @@ return (
         >
           {/* Display Name */}
           <div>
-            <label className="block text-flockblack mb-1 text-sm">
+            <label className="block  mb-1 text-sm">
               Display Name
             </label>
             <input
@@ -114,10 +113,10 @@ return (
                 p-3
                 rounded-lg
                 border
-                border-flockgreen
+                border-gruvgreen
                 focus:outline-none
                 focus:ring-2
-                focus:ring-flockyellow
+                focus:ring-gruvyellow
               "
               placeholder="Your name"
             />
@@ -125,7 +124,7 @@ return (
 
           {/* Email */}
           <div>
-            <label className="block text-flockblack mb-1 text-sm">Email</label>
+            <label className="block  mb-1 text-sm">Email</label>
             <input
               type="email"
               value={email}
@@ -136,10 +135,10 @@ return (
                 p-3
                 rounded-lg
                 border
-                border-flockgreen
+                border-gruvgreen
                 focus:outline-none
                 focus:ring-2
-                focus:ring-flockyellow
+                focus:ring-gruvyellow
               "
               placeholder="example@email.com"
             />
@@ -147,7 +146,7 @@ return (
 
           {/* Password */}
           <div>
-            <label className="block text-flockblack mb-1 text-sm">
+            <label className="block  mb-1 text-sm">
               Password
             </label>
             <input
@@ -160,10 +159,10 @@ return (
                 p-3
                 rounded-lg
                 border
-                border-flockgreen
+                border-gruvgreen
                 focus:outline-none
                 focus:ring-2
-                focus:ring-flockyellow
+                focus:ring-gruvyellow
               "
               placeholder="••••••••"
             />
@@ -179,8 +178,8 @@ return (
               w-full
               py-2.5
               rounded-lg
-              bg-[#668c4a] text-white 
-              hover:bg-[#5a7b41] 
+              bg-gruvgreen text-white 
+              hover:bg-gruvgreen/90
               hover:scale-[1.02]
               transition-all 
               duration-200
@@ -197,10 +196,10 @@ return (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-8 text-flockblack text-sm"
+          className="mt-8  text-sm"
         >
           Have an account?{" "}
-          <Link href="/login" className="text-flockgreen hover:underline">
+          <Link href="/login" className="text-gruvgreen hover:underline">
             Sign in
           </Link>
         </motion.p>

@@ -91,5 +91,12 @@
 |Samuel  | Y |
 
 ### Agenda
+- discuss merging of all of our individual work
+- discuss new roles and split up team for better efficiency
+
 ### Minutes
+- reviewed eachothers frontend and discussed merging methods
+- frontend and backend discussed routing conventions and how to implement
+- plan for front end merging was created -> Arran will merge the front end pages into dev during week starting 11-05. This includes pulling everyones code, normalising styles, naming conventions and making sure all routes and pages are functional. Samuel will then take over for week starting 11-12 and implement the backend.
+- the rest of team will begin focus on the project documentation and presentation, in hopes to have a fully funtioning app with sufficient documentation ready for 11-29
 

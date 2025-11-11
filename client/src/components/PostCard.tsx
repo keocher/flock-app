@@ -10,7 +10,7 @@ import { FaCircleDot as Dot } from 'react-icons/fa6';
 
 export default function PostCard({post}: {post: Post }) {
   return (
-    <article className='bg-flockblack/50 justify-center items-center rounded-2xl '>
+    <article className='bg-gruvgray/50 justify-center items-center rounded-2xl '>
       <header className='flex items-center gap-3 px-4 pt-3'>
         <div className='w-8 h-8 flex items-center justify-center bg-gray-300 rounded-full overflow-hidden hover:scale-110 duration-300 cursor-pointer'>
          
@@ -22,7 +22,7 @@ export default function PostCard({post}: {post: Post }) {
           <div className='flex items-center gap-3 flex-1'>
           <p className="text-[13px] font-semibold uppercase tracking-wide">{post.authorName}</p>
           <Dot className="size-1.5"/>
-          <p className="text-[11px] text-slate-600">
+          <p className="text-[11px] text-gruvorange">
               {new Date(post.date).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})}
           </p>
           <span className=' flex ml-auto text-[13px] font-semibold uppercase tracking-wide'>CS353</span>

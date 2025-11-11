@@ -30,11 +30,12 @@ export default function LoginPage() {
 
     // Success toast
     toast.success("Login successful 🎉");
-
+    document.cookie = `accessToken=${res.data.accessToken}; path=/`;
     // Optional: redirect after short delay
     setTimeout(() => {
-      window.location.href = "/"; // Change this to your intended page
+      window.location.href = "/home"; // Change this to your intended page
     }, 1500);
+    
     } 
     catch (err: any) {
     toast.dismiss(loadingToast);
@@ -64,7 +65,7 @@ return (
         flex-col
         justify-center
         items-center
-        bg-flockbeige
+        
         p-10
       "
     >
@@ -72,7 +73,7 @@ return (
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="text-3xl font-bold text-flockblack mb-2"
+        className="text-3xl font-bold  mb-2"
       >
         Welcome Back
       </motion.h1>
@@ -81,7 +82,7 @@ return (
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-flockgreen mb-6"
+        className="text-gruvgreen mb-6"
       >
         Sign in to continue your journey
       </motion.p>
@@ -95,7 +96,7 @@ return (
       >
         {/* Email */}
         <div>
-          <label className="block text-flockblack mb-1 text-sm">Email</label>
+          <label className="block  mb-1 text-sm">Email</label>
           <input
             type="email"
             value={email}
@@ -106,10 +107,10 @@ return (
               p-3
               rounded-lg
               border
-              border-flockgreen
+              border-gruvgreen
               focus:outline-none
               focus:ring-2
-              focus:ring-flockyellow
+              focus:ring-gruvyellow
             "
             placeholder="you@example.com"
           />
@@ -117,7 +118,7 @@ return (
 
         {/* Password */}
         <div>
-          <label className="block text-flockblack mb-1 text-sm">Password</label>
+          <label className="block  mb-1 text-sm">Password</label>
           <input
             type="password"
             value={password}
@@ -128,10 +129,10 @@ return (
               p-3
               rounded-lg
               border
-              border-flockgreen
+              border-gruvgreen
               focus:outline-none
               focus:ring-2
-              focus:ring-flockyellow
+              focus:ring-gruvyellow
             "
             placeholder="••••••••"
           />
@@ -147,8 +148,8 @@ return (
             w-full
             py-2.5
             rounded-lg
-            bg-[#668c4a] text-white
-            hover:bg-[#5a7b41]
+            bg-gruvgreen text-white
+            hover:bg-gruvgreen/90
             transition-all
             duration-200
             shadow-md
@@ -164,10 +165,10 @@ return (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="mt-6 text-flockblack text-sm"
+        className="mt-6  text-sm"
       >
         Don’t have an account?{" "}
-        <Link href="/signup" className="text-flockgreen hover:underline">
+        <Link href="/signup" className="text-gruvgreen hover:underline">
           Sign up here
         </Link>
       </motion.p>

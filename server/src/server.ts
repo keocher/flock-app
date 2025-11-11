@@ -18,7 +18,7 @@ export async function startServer() {
 
     const app = express();
     app.use(helmet());
-    app.use(cors({ origin: true, credentials: true }));
+    app.use(cors({ origin: "http://localhost:3000", credentials: true }));
     app.use(express.json({ limit: '2mb' }));
     app.use(morgan('dev'));
     app.use(rateLimit({ windowMs: 60_000, max: 100 }));
