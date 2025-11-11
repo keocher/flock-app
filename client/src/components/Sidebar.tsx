@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <>
       <aside className="min-h-screen max-w-2xs bg-gruvgreen p-4 flex flex-col items-center">
-        <div >
+        <div>
           <img
             src="/flock-logo.svg"
             alt="Flock Logo"
@@ -45,15 +45,15 @@ const Sidebar = () => {
         </div>
 
         <div className="items-center mt-auto mb-6">
-        <Link href="/profile">
-        <Image
-            src="/profile-pic.png"
-            alt="Profile Picture"
-            width={100}
-            height={100}
-            className="rounded-full hover:scale-110 duration-300 cursor-pointer"
-          />
-        </Link> 
+          <Link href="/profile">
+            <Image
+              src="/profile-pic.png"
+              alt="Profile Picture"
+              width={100}
+              height={100}
+              className="rounded-full hover:scale-110 duration-300 cursor-pointer"
+            />
+          </Link>
         </div>
       </aside>
     </>

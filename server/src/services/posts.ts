@@ -12,22 +12,33 @@ export type Post = {
 const posts: Record<string, Post> = {};
 
 function uuid() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
     const r = (Math.random() * 16) | 0,
-      v = c === 'x' ? r : (r & 0x3) | 0x8;
+      v = c === "x" ? r : (r & 0x3) | 0x8;
     return v.toString(16);
   });
 }
 
 export async function listPosts(page = 1, limit = 20): Promise<Post[]> {
-  const all = Object.values(posts).sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
+  const all = Object.values(posts).sort((a, b) =>
+    a.createdAt < b.createdAt ? 1 : -1,
+  );
   const start = (page - 1) * limit;
   return all.slice(start, start + limit);
 }
 
-export async function createPost(authorId: string, data: { title: string; body: string }): Promise<Post> {
+export async function createPost(
+  authorId: string,
+  data: { title: string; body: string },
+): Promise<Post> {
   const id = uuid();
-  const post: Post = { id, authorId, title: data.title, body: data.body, createdAt: new Date().toISOString() };
+  const post: Post = {
+    id,
+    authorId,
+    title: data.title,
+    body: data.body,
+    createdAt: new Date().toISOString(),
+  };
   posts[id] = post;
   return post;
 }

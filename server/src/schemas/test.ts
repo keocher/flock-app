@@ -1,10 +1,10 @@
-import { Router } from 'express';
-import { createPostSchema } from '../schemas/post.js';
-import { z } from 'zod';
+import { Router } from "express";
+import { createPostSchema } from "../schemas/post.js";
+import { z } from "zod";
 
 const router = Router();
 
-router.post('/create', (req, res) => {
+router.post("/create", (req, res) => {
   const result = createPostSchema.safeParse({ body: req.body });
 
   if (!result.success) {

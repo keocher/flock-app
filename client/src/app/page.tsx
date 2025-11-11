@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Sidebar from "../components/Sidebar";
-import {post as posts} from "../mock/post"
+import { post as posts } from "../mock/post";
 import PostCard from "../components/PostCard";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-
 
 export default async function Home() {
   const cookieStore = await cookies();

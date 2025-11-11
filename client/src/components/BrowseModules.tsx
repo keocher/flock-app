@@ -12,8 +12,12 @@ export default function BrowseModules() {
       const matchesSearch =
         mod.name.toLowerCase().includes(search.toLowerCase()) ||
         mod.code.toLowerCase().includes(search.toLowerCase());
-      const matchesDepartment = departmentFilter ? mod.department === departmentFilter : true;
-      const matchesSemester = semesterFilter ? mod.semester === semesterFilter : true;
+      const matchesDepartment = departmentFilter
+        ? mod.department === departmentFilter
+        : true;
+      const matchesSemester = semesterFilter
+        ? mod.semester === semesterFilter
+        : true;
       return matchesSearch && matchesDepartment && matchesSemester;
     });
   }, [search, departmentFilter, semesterFilter]);
@@ -26,17 +30,14 @@ export default function BrowseModules() {
     transition: "background-color 0.2s",
   };
 
- /* const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement | HTMLSelectElement>) =>
+  /* const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement | HTMLSelectElement>) =>
     (e.currentTarget.style.backgroundColor = "#7C7C6F");
 
  /const handleMouseLeave = (e: React.MouseEvent<HTMLButtonElement | HTMLSelectElement>) =>
     (e.currentTarget.style.backgroundColor = "#414142"); */
 
   return (
-    <div
-      className="min-h-screen w-full p-6 flex flex-col items-center"
-      
-    >
+    <div className="min-h-screen w-full p-6 flex flex-col items-center">
       <h1 className="text-3xl font-bold mb-6 ">Browse Modules</h1>
 
       <div className="flex flex-col sm:flex-row gap-4 mb-6 w-full max-w-6xl flex-wrap">
@@ -49,19 +50,16 @@ export default function BrowseModules() {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-
         {/* Department Filter */}
         <select
           className="px-3 py-2 rounded appearance-none bg-gruvgray hover:cursor-pointer hover:bg-gruvgray/50 duration-300 "
-        
           value={departmentFilter ?? ""}
           onChange={(e) => setDepartmentFilter(e.target.value || null)}
-         // onMouseEnter={handleMouseEnter}
-         // onMouseLeave={handleMouseLeave}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
         >
           <option value="">All Departments</option>
           <option value="Computer Science">Computer Science</option>
-          
         </select>
 
         {/* Semester Filter */}
@@ -79,10 +77,10 @@ export default function BrowseModules() {
 
         {/* Clear Filters Button */}
         <button
-        className="bg-gruvorange hover:bg-gruvorange/80 "
+          className="bg-gruvorange hover:bg-gruvorange/80 "
           style={buttonStyle}
-         // onMouseEnter={handleMouseEnter}
-         // onMouseLeave={handleMouseLeave}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
           onClick={() => {
             setSearch("");
             setDepartmentFilter(null);

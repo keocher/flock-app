@@ -12,40 +12,38 @@ export default function SignupPage() {
   const [displayName, setDisplayName] = useState("");
 
   const handleSignup = async (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  // Loading feedback
-  const loadingToast = toast.loading("Creating your account...");
+    // Loading feedback
+    const loadingToast = toast.loading("Creating your account...");
 
-  try {
-    const res = await axios.post("http://localhost:4000/v1/auth/signup", {
-      email,
-      password,
-      displayName,
-    });
+    try {
+      const res = await axios.post("http://localhost:4000/v1/auth/signup", {
+        email,
+        password,
+        displayName,
+      });
 
-    console.log(res.data);
+      console.log(res.data);
 
-    toast.dismiss(loadingToast);
-    toast.success("Account created successfully 🎉");
+      toast.dismiss(loadingToast);
+      toast.success("Account created successfully 🎉");
 
-
-    // Optional: Redirect to login after 1.5s
-    setTimeout(() => {
+      // Optional: Redirect to login after 1.5s
+      setTimeout(() => {
         window.location.href = "/login";
       }, 1500);
-    } 
-    catch (err: any) {
+    } catch (err: any) {
       toast.dismiss(loadingToast);
       const errorMsg =
-        err.response?.data?.error?.message || "Signup failed. Please try again.";
+        err.response?.data?.error?.message ||
+        "Signup failed. Please try again.";
       toast.error(errorMsg);
       console.error("Signup error:", errorMsg);
     }
-};
+  };
 
-
-return (
+  return (
     <div className="flex min-h-screen">
       {/* Left Panel (Form Section) */}
       <motion.div
@@ -69,11 +67,7 @@ return (
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mb-5 flex items-center gap-3"
         >
-          <img
-            src="/flock-logo.svg"
-            alt="Flock logo"
-            className="w-45 h-45"
-          />
+          <img src="/flock-logo.svg" alt="Flock logo" className="w-45 h-45" />
         </motion.div>
 
         {/* Headings */}
@@ -100,9 +94,7 @@ return (
         >
           {/* Display Name */}
           <div>
-            <label className="block  mb-1 text-sm">
-              Display Name
-            </label>
+            <label className="block  mb-1 text-sm">Display Name</label>
             <input
               type="text"
               value={displayName}
@@ -146,9 +138,7 @@ return (
 
           {/* Password */}
           <div>
-            <label className="block  mb-1 text-sm">
-              Password
-            </label>
+            <label className="block  mb-1 text-sm">Password</label>
             <input
               type="password"
               value={password}
@@ -201,6 +191,17 @@ return (
           Have an account?{" "}
           <Link href="/login" className="text-gruvgreen hover:underline">
             Sign in
+          </Link>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-1  text-sm"
+        >
+          What is Flock?{" "}
+          <Link href="/info" className="text-gruvgreen hover:underline">
+            Info Page
           </Link>
         </motion.p>
       </motion.div>

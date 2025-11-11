@@ -1,5 +1,5 @@
-import { PostModel } from '../models/Post.js';
-import connectDB from '../connectDB.js';
+import { PostModel } from "../models/Post.js";
+import connectDB from "../connectDB.js";
 
 const seedPosts = async () => {
   await connectDB();
@@ -13,7 +13,7 @@ const seedPosts = async () => {
       authorAvatar: "",
       postImage: "/post-image01.jpg",
       likeCount: 10,
-      commentCount: 2
+      commentCount: 2,
     },
     {
       authorName: "Jane Smith",
@@ -23,8 +23,8 @@ const seedPosts = async () => {
       authorAvatar: "",
       postImage: "/post-image02.jpg",
       likeCount: 5,
-      commentCount: 1
-    }
+      commentCount: 1,
+    },
   ]);
 
   console.log("✅ Posts seeded to MongoDB");
