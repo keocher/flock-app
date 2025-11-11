@@ -15,7 +15,7 @@ export default async function Home() {
     redirect("/home");
   } else {
     // redirect to /login
-    redirect("/login");
+    redirect("/signup");
   }
 
   // return fallback UI if needed (code won't reach here after redirect)
