@@ -18,6 +18,24 @@ A social media platform for students to build relationships and collaborate.
 | Reema          | 24767945    | u250456     | Front-End  |
 | Samuel         | 23438342    | u240637     | Full-Stack |
 
+## Screenshots
+### Demo Video
+![Demo Video](./assets/screenshots/flock-demo.gif)
+
+### Light Mode
+![Home](./assets/screenshots/screenshot-home.png)
+![Login](./assets/screenshots/screenshot-signup.png)
+![Profile](./assets/screenshots/screenshot-profile.png)
+![Modules](./assets/screenshots/screenshot-modules.png)
+![Add Post](./assets/screenshots/screenshot-addpost.png)
+
+### Dark mode
+![Home](./assets/screenshots/screenshot-home-dark.png)
+![Login](./assets/screenshots/screenshot-signup-dark.png)
+![Profile](./assets/screenshots/screenshot-profile-dark.png)
+![Modules](./assets/screenshots/screenshot-modules-dark.png)
+
+
 ## Technologies Used
 
 ### Frontend
