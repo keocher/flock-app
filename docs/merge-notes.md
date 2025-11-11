@@ -9,6 +9,7 @@
 - [x] remove Next debug button
 - [x] update HTML Header text and icon in browser
 - [x] created profile page
+- [x] merged info page and added "what is flock?" to sign up page
 
 ## Notes
 
@@ -53,5 +54,6 @@
 - [ ] CRUD for modules. Add modules on the browse modules page and allow a user to sign up. This adds the module to user profile. Users can then only add posts with module tag of courses they are signed up to (add-post page update required) and also only shows posts on homepage of modules they are signed up to
 - [ ] make likes functional
 - [ ] make comments functional
+- [ ] make info page more relevent to project
 
 **Edited: Arran**
