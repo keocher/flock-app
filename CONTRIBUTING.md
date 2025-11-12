@@ -16,13 +16,13 @@ Our goal is to build a social media/forums app for students.
 
 | Name           | Student No. | CompSci No. | Main Area  |
 | -------------- | ----------- | ----------- | ---------- |
-| Aayush         | 23370203    | u240634     | Back-End   |
-| Arran          | 23452532    | u240218     | Full-Stack |
-| Caitlin        | 22521999    | u230289     | Front-End  |
-| David-Williams | 23406252    | u240223     | Back-End   |
-| Kevin          | 23410606    | u240649     | Front-End  |
-| Reema          | 24767945    | u250456     | Front-End  |
-| Samuel         | 23438342    | u240637     | Full-Stack |
+| Aayush         | -    | -    | Back-End   |
+| Arran          | -    | -    | Full-Stack |
+| Caitlin        | -   | -    | Front-End  |
+| David-Williams | -   | -     | Back-End   |
+| Kevin          | -   | -    | Front-End  |
+| Reema          | -   | -    | Front-End  |
+| Samuel         |-   | -    | Full-Stack |
 
 ## Technologies Used
 
